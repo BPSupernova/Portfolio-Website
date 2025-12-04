@@ -54,14 +54,14 @@ function Sidebar() {
         </div>
         <div>
           <div className="text-xs text-white/70">Role</div>
-          <div className="font-medium">Front-end & Game Engine Dev</div>
+          <div className="font-medium">Software Engineer (Front-End) || Game Developer / Programmer || Human-Centered Design Specialist</div>
         </div>
       </div>
 
       <div className="mt-auto">
         <a
           href="#contact"
-          className="inline-block w-full text-center px-4 py-2 rounded-xl bg-amber-400/90 text-slate-900 font-semibold"
+          className="hover:bg-yellow-600 inline-block w-full text-center px-4 py-2 rounded-xl bg-amber-400/90 text-slate-900 font-semibold "
         >
           Hire / Contact
         </a>
@@ -131,10 +131,10 @@ function Resume() {
       </div>
 
       <a
-        className="inline-block mt-2 px-4 py-2 rounded-xl bg-rose-500/90 text-white font-semibold"
-        href="/mnt/data/Resume.pdf"
+        className="hover:bg-red-700 inline-block mt-2 px-4 py-2 rounded-xl bg-rose-500/90 text-white font-semibold"
+        href="/Ben_Perry_Resume_2025.pdf"
       >
-        Download Resume (placeholder)
+        Download Resume
       </a>
     </section>
   );
@@ -143,41 +143,177 @@ function Resume() {
 const PROJECTS = [
   {
     id: 1,
-    title: "Speedrun Camera — Prototype",
+    title: "Skate Shot — Prototype Level",
     desc: "A momentum-based speedrunning level where players use a camera to freeze time and optimize routes.",
     tags: ["Unreal", "C++", "Gameplay"],
+    image: "/profile.jpg",
+    link: null,
+    download: "/Project 2 - Ben Perry.zip",
   },
   {
     id: 2,
     title: "Geocamera Archive",
-    desc: "Mapping tool with pinning and media-linked frames; Street View + 3D map integration.",
-    tags: ["React", "Maps API", "UX"],
+    desc: "Mapping tool with pinning and media-linked frames; Street View + 3D map integration. Also uses YouTube's I-Frame API.",
+    tags: ["I-Frame API", "Javascript", "Maps API", "UX", "Tabulator"],
+    image: "/profile.jpg",
+    link: "https://benperry.acequia.io/matcher/index_v009.html",
+    download: null,
   },
   {
     id: 3,
-    title: "Predictive Model Demo",
+    title: "Herd Watch — Predictive Model Demo",
     desc: "Small ML model for a vision task with explanation UI and charts.",
     tags: ["Python", "ML", "Visualization"],
+    image: "/profile.jpg",
+    link: null,
+    download: null,
   },
+  {
+    id: 4,
+    title: "ASKMII Game Engine",
+    desc: "Custom C# game engine with ECS architecture, rendering, physics, and scripting.",
+    tags: ["C++", "Engine Dev", "SFML"],
+    image: "/profile.jpg",
+    link: null,
+    download: null,
+  },
+  {
+    id: 5,
+    title: "Retro Games",
+    desc: "Collection of small games with unique improvements (Wordle, Snake, Tetris, etc.) built from scratch in the Unity engine.",
+    tags: ["Unity", "C#", "Game Dev"],
+    image: "/profile.jpg",
+    link: null,
+    download: null,
+  },
+  {
+    id: 6,
+    title: "Pier Pressuring - Prototype Game",
+    desc: "A puzzle-platformer where players play as a pelican undocking sailors ships from a pier. Experiment with human-like AI behaviors.",
+    tags: ["Unity", "C#", "AI", "Human-like AI Behavior"],
+    image: "/profile.jpg",
+    link: null,
+    download: null,
+  },
+  {
+    id: 7,
+    title: "Dungeon Scrawlers - Prototype Game",
+    desc: "A procedurally-generated dungeon crawler where players explore multiple floors in a maze-like environment.",
+    tags: ["Unity", "C#", "AI", "Procedural Generation"],
+    image: "/profile.jpg",
+    link: "https://benperry.dev",
+    download: null,
+  },
+  {
+    id: 8,
+    title: "Smile App",
+    desc: "A simple message board where users can log in and post positive messages to brighten someone's day.",
+    tags: ["Software Engineering", "SQLalchemy", "Flask"],
+    image: "/profile.jpg",
+    link: "https://benperry.dev",
+    download: null,
+  },
+  {
+    id: 9,
+    title: "2D RPG Template",
+    desc: "A JRPG template with a Dragon Quest inspired system for combat, quest, dialogue, scene transition, camera, game manager, inventory, saving, audio, and shop systems, etc., along with custom menus created for each aspect of the game. ",
+    tags: ["JRPG", "Systems Development", "C#", "Unity", "Game Dev"],
+    image: "/profile.jpg",
+    link: "https://benperry.dev",
+    download: null,
+  },
+  {
+    id: 10,
+    title: "2.5D RPG Template",
+    desc: "A 2.5D RPG template with an isometric camera, movement, and combat.",
+    tags: ["JRPG", "Systems Development", "C#", "Unity", "Game Dev"],
+    image: "/profile.jpg",
+    link: "https://benperry.dev",
+    download: null,
+  },
+  {
+    id: 11,
+    title: "Mood Matcher",
+    desc: "A quote generator where the user selects their mood and receives a quote that matches it.",
+    tags: ["Data Science", "C#", "Unity", "Game Dev"],
+    image: "/profile.jpg",
+    link: "https://benperry.dev",
+    download: null,
+  }, 
+  {
+    id: 12,
+    title: "Project Lilac",
+    desc: "I developed the real-time, stance based combat system for this Indie RPG, inspired by classic JRPGs like Chrono Trigger, using C# in the Unity engine.",
+    tags: ["Combat Systems", "C#", "Unity", "Game Dev"],
+    image: "/profile.jpg",
+    link: "https://benperry.dev",
+    download: null,
+  },
+  {
+    id: 13,
+    title: "Research Opportunities Board",
+    desc: "An application that hosts research opportunities for students to apply to as well as opportunity provider accounts for users to post research opportunities. Built with Flask, SQLalchemy, and Python.",
+    tags: ["Python", "Flask", "Software Engineering", "SQLalchemy"],
+    image: "/profile.jpg",
+    link: "https://benperry.dev",
+    download: null,
+  },
+  {
+    id: 14,
+    title: "Computer Graphics & Computer Animation Projects",
+    desc: "Projects ranging from a vector graphics editor, animating a sphere along a spline, a bunny on top of a car animation (with lighting and shadows), a rough humanoid animation, a cube animating using quaternions, a particle system, and more. Read each README for details on each project.",
+    tags: ["WebGL", "Computer Graphics", "Computer Animation"],
+    image: "/profile.jpg",
+    link: null,
+    download: "/ComputerGraphics&AnimationProjects-BenPerry.zip",
+  }
 ];
 
 function Portfolio() {
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-bold">Portfolio</h2>
+      <h3 className="text-white/85 font-bold">Click on a project to demo or download!</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {PROJECTS.map((p) => (
-          <article key={p.id} className="bg-white/6 p-6 rounded-xl">
-            <h3 className="font-semibold text-xl">{p.title}</h3>
-            <p className="text-sm text-white/80 my-2">{p.desc}</p>
-            <div className="flex gap-2 flex-wrap">
-              {p.tags.map((t) => (
-                <span key={t} className="text-xs px-2 py-1 bg-white/8 rounded-full">
-                  {t}
-                </span>
-              ))}
+          <button
+            key={p.id}
+            onClick={() => {
+              if (p.download) {
+                window.location.href = p.download;
+              } else if (p.link) {
+                window.open(p.link, "_blank");
+              }
+            }}
+            className="relative bg-white/6 p-6 rounded-xl text-left group transition-all hover:scale-[1.02] hover:shadow-xl overflow-hidden"
+          >
+            {/* Hover image */}
+            <img
+              src={p.image}
+              alt={p.title}
+              className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-40 transition-opacity duration-300 pointer-events-none"
+            />
+
+            {/* Content overlay */}
+            <div className="relative z-10">
+              <h3 className="font-semibold text-xl">{p.title}</h3>
+              <p className="text-sm text-white/80 my-2">{p.desc}</p>
+
+              <div className="flex gap-2 flex-wrap">
+                {p.tags.map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs px-2 py-1 bg-white/10 rounded-full backdrop-blur-sm"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
             </div>
-          </article>
+
+            {/* Subtle darkening overlay */}
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 pointer-events-none"></div>
+          </button>
         ))}
       </div>
     </section>
@@ -190,12 +326,19 @@ function Contact() {
       <h2 className="text-3xl font-bold">Contact</h2>
       <p className="text-white/85">Want to work together? Send me a message and I’ll respond within a few days.</p>
 
-      <form className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
-        <input className="p-3 rounded-xl bg-white/6" placeholder="Name" />
-        <input className="p-3 rounded-xl bg-white/6" placeholder="Email" />
-        <input className="p-3 rounded-xl bg-white/6 col-span-full" placeholder="Subject" />
-        <textarea className="p-3 rounded-xl bg-white/6 col-span-full" placeholder="Message" rows={5} />
-        <button className="px-4 py-2 rounded-xl bg-amber-400/90 text-slate-900 font-semibold col-span-full">
+      <form
+        action="https://formspree.io/f/mwpgbgpd"
+        method="POST"
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl"
+      >
+        <input className="p-3 rounded-xl bg-white/6" name="name" placeholder="Name" required />
+        <input className="p-3 rounded-xl bg-white/6" name="email" placeholder="Email" type="email" required />
+        <input className="p-3 rounded-xl bg-white/6 col-span-full" name="subject" placeholder="Subject" />
+        <textarea className="p-3 rounded-xl bg-white/6 col-span-full" name="message" placeholder="Message" rows={5} required />
+        <button
+          type="submit"
+          className="hover:bg-yellow-600 px-4 py-2 rounded-xl bg-amber-400/90 text-slate-900 font-semibold col-span-full"
+        >
           Send Message
         </button>
       </form>
