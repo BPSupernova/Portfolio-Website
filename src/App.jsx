@@ -148,7 +148,7 @@ const PROJECTS = [
     tags: ["Unreal", "C++", "Gameplay"],
     image: "/profile.jpg",
     link: null,
-    download: "/Project 2 - Ben Perry.zip",
+    download: "/SkateShotBeta.zip",
   },
   {
     id: 2,
