@@ -368,7 +368,7 @@ export default function PortfolioApp() {
       <div
         className="absolute inset-0 opacity-30 pointer-events-none"
         style={{
-          backgroundImage: "url('/stars.png')",
+          backgroundImage: "url('/Stars2.png')",
           backgroundRepeat: "repeat",
           backgroundSize: "400px",
         }}
