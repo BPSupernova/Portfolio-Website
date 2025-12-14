@@ -89,6 +89,8 @@ function About() {
         and well-crafted experiences. I specialize in front-end development (React),
         UI/UX, and game engines (Unity/Unreal). I also have experience building
         prediction tools and small machine-learning models for applied projects.
+
+        On the personal side, I love JRPGs, writing, dogs, and billiards.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -181,7 +183,7 @@ const PROJECTS = [
   {
     id: 4,
     title: "ASKMII Game Engine",
-    desc: "Custom C# game engine with ECS architecture, rendering, physics, and scripting.",
+    desc: "Custom C++ game engine using SFML library. Documentation: dragonfly.wpi.edu/include/index.html, with custom additions as exceptions, such as custom games that can be played by the engine (one of which is loaded onto the executable in the downloadable zip).",
     tags: ["C++", "Engine Dev", "SFML"],
     image: "/ASKMII_Photo.png",
     link: "https://github.com/BPSupernova/Portfolio-Website/releases/tag/ASKMII",
