@@ -56,7 +56,7 @@ function Sidebar({ setActive }) {
         </div>
         <div>
           <div className="text-xs text-white/70">Role</div>
-          <div className="font-medium">Front-end & Game Engine Dev</div>
+          <div className="font-medium">Software Engineer & Game Dev</div>
         </div>
       </div>
 
@@ -116,6 +116,9 @@ function Resume() {
           <h3 className="font-semibold mb-2">Experience</h3>
           <ul className="list-disc pl-5 text-sm text-white/85 space-y-2">
             <li>
+              <strong>C++ Application Developer Intern</strong> - Carlson Software (C++, Agile development, Full-stack development)
+            </li>
+            <li>
               <strong>Research / Software Engineering Intern</strong> - Harvard Data Visualization Lab & Redfish Group (Geospatial technology, Data visualization)
             </li>
             <li>
@@ -132,21 +135,28 @@ function Resume() {
         <div className="bg-white/6 p-6 rounded-xl">
           <h3 className="font-semibold mb-2">Education & Skills</h3>
           <p className="text-sm text-white/85">
-            B.S. Computer Science & IMGD — Worcester Polytechnic Institute (expected 2026)
+            B.S. Computer Science - Worcester Polytechnic Institute (2026)
+            B.S. Interactive Media & Game Development — Worcester Polytechnic Institute (2026)
           </p>
           <div className="mt-3 space-y-1 text-sm">
-            <div>Languages: C#, C++, Python, JS</div>
-            <div>Frameworks: React, Unity, Unreal</div>
-            <div>Tools: Git, Docker, Tailwind</div>
+            <div>Languages: C++, C#, C, Python, Java, Ruby, JavaScript, HTML/CSS, x86 Assembly</div>
+            <div>Experience With: React, Unity, UnrealEngine, Git, Adobe Suite (Photoshop, Illustrator, Acrobat, Fonts, After Effects, Colors), Github, Git, Sourcetree,  Canva, Microsoft 365, R, MatLab, Trello, Jira, Miro </div>
           </div>
         </div>
       </div>
 
       <a
         className="hover:bg-red-700 inline-block mt-2 px-4 py-2 rounded-xl bg-rose-500/90 text-white font-semibold"
-        href="/Ben_Perry_Resume_2025.pdf"
+        href="/Ben_Perry_Resume_2026.pdf"
       >
-        Download Resume
+        Download One-Page Resume
+      </a>
+      <br></br>
+      <a
+        className="hover:bg-red-700 inline-block mt-2 px-4 py-2 rounded-xl bg-rose-500/90 text-white font-semibold"
+        href="/Ben_Perry_Resume_2026_Multi_Page.pdf"
+      >
+        Download Multi-Page Resume
       </a>
     </section>
   );
@@ -156,7 +166,7 @@ const PROJECTS = [
   {
     id: 1,
     title: "Skate Shot — Prototype Level",
-    desc: "A momentum-based speedrunning level where players use a camera to freeze time and optimize routes.",
+    desc: "A momentum-based speedrunning 3D platformer where players use a camera to freeze time and optimize routes.",
     tags: ["Unreal", "C++", "Gameplay"],
     image: "/SkateShot_Photo.png",
     link: "https://github.com/BPSupernova/Portfolio-Website/releases/tag/Skate_Shot",
